@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Biblioteka</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+
+<div class="container-contact100" style="background-image: url('images/bg-01.jpg');">
+    <div class="wrap-contact100">
+        <form class="contact100-form validate-form">
+				<span class="contact100-form-title">
+					Dodaj książkę
+				</span>
+
+            <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Numer ISBN jest wymagany">
+                <span class="label-input100">Podaj numer isbn książki</span>
+                <input class="input100" type="number" name="isbn" placeholder="Numer isbn">
+            </div>
+
+            <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Tytuł książki jest wymagany">
+                <span class="label-input100">Wprowadź tytuł nowej książki</span>
+                <input class="input100" type="text" name="title" placeholder="Tytuł książki">
+            </div>
+
+            <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Autor książki jest wymagany">
+                <span class="label-input100">Wprowadź autora książki</span>
+                <input class="input100" type="text" name="author" placeholder="Dane autora">
+            </div>
+
+            <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Wydawca książki jest wymagany">
+                <span class="label-input100">Wprowadź wydawcę książki</span>
+                <input class="input100" type="text" name="publisher" placeholder="Dane wydawcy">
+            </div>
+
+            <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Kategoria książki jest wymagana">
+                <span class="label-input100">Wprowadź kategorię książki</span>
+                <input class="input100" type="text" name="type" placeholder="Kategoria książki">
+            </div>
+
+            <div class="container-contact100-form-btn">
+                <div class="wrap-contact100-form-btn">
+                    <div class="contact100-form-bgbtn"></div>
+                    <button class="contact100-form-btn">
+                        Wyślij
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <table id="booksTable">
+        <thead>
+        <tr>
+            <td class="bookTd"><b>KLIKNIJ TYTUŁ, ABY ROZWINĄĆ</b></td>
+        </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <span class="contact100-more">
+				Warszaty Java Script / Ajax - Tomasz Mrozik
+		</span>
+</div>
+
+<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<script src="vendor/select2/select2.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/ajaxapp.js"></script>
+</body>
+</html>
